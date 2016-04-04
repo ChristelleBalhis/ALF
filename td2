@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<form name="myform">
+    <input name="CreditCardNumber" />
+</form>
+<br>
+
+
+<script>
+function validate_creditcardnumber()
+{
+
+var re16digit=/^\d{16}$/
+if (document.myform.CreditCardNumber.value.search(re16digit)==-1)
+alert("Entrez les 16 chiffres de votre credit card ");
+return false;
+
+}
+
+document.myform.CreditCardNumber.onchange = validate_creditcardnumber;
+</script>
+
+</body>
+</html>
