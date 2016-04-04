@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>si tu veux s'avoir si tu es le matin ou le soir click ici:</p>
+
+<button onclick="myFunction()">Essayez</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var hour = new Date().getHours(); 
+    var leTemps;
+    if (hour < 18) {
+        leTemps = "Le matin";
+    } else {
+        leTemps = "Le soir";
+    }
+    document.getElementById("demo").innerHTML = leTemps;
+}
+</script>
+
+</body>
+</html>
